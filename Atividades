@@ -1,0 +1,88 @@
+1 Imprima uma mensagem de boas-vindas na tela.
+
+R:print('Seja bem vindo(a)')
+
+2 Declare uma variável booleana verdadeiro
+com o valor True e imprima seu tipo
+
+R:
+Booleano = True
+
+print(type(Booleano))
+
+3 Imprima o resultado da multiplicação de dois números decimais de sua escolha
+
+R:
+n1= 10.5
+n2= 7.8
+
+print(n1+n2)
+
+4 Imprima o resultado da divisão de dois números inteiros 
+de sua escolha.
+
+R:
+n1= 10
+n2= 20
+
+print(n1/n2)
+
+5 Imprima o resultado da subtração de dois números inteiros de sua escolha
+
+R:
+n1= 10
+n2= 20
+
+print(n1-n2)
+
+6 Imprima o resultado da divisão inteira de dois números inteiros 
+de sua escolha.
+
+R:
+n1= 10
+n2= 5
+
+print(n1//n2)
+
+7 Imprima o resultado da multiplicação de 4 números 
+decimais de sua escolha
+
+R:
+n1= 10.4
+n2= 5.0
+n3= 3.2
+n4= 0.3
+
+print(n1*n2*n3*n4)
+
+8 Declare uma variável numero e atribua um número inteiro. Em seguida, 
+imprima o dobro desse número
+
+R:
+n1= 3
+
+print(n1+n1)
+
+9 Crie uma calculadora de soma com as ferramentas que vc já 
+conhece(Use apenas input, print e variavel)
+
+R:
+print('Ola usuario, seja bem vindo a calculadora de soma')
+
+n1= int(input('Insira aqui o numero que você deseja somar:'))
+n2= int(input('Insira aqui o numero que você deseja somar:'))
+
+print('E o resultado da sua soma é', n1+n2)
+
+10 Crie um sistema de cadastro com as estruturas que vc já 
+conhece(Use apenas input, print e variavel)
+
+R:
+print('Ola usuario, seja bem vindo')
+
+Nome= input('Insira aqui o seu nome:')
+Idade= int(input('Insira aqui a sua idade:'))
+Endereco= input('Digite aqui o seu endereço:')
+
+print('Seja bem vindo', Nome ,'tenha uma boa experiencia')
+
