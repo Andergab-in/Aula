@@ -1,1 +1,126 @@
+# Nesse código, o limite era de no máximo 3 clientes e não se podia usar looping
 
+print('Ola querido(a) cliente')
+
+quantidade_de_clientes = int(input('Digite aqui a quantidade de hospedes que deseja cadastrar:'))
+quartos = ['Simples', 'Duplo', 'Luxuoso']
+quartos_escolhidos = []
+valores = []
+precos_do_hotel = [100,150,250]
+
+
+if quantidade_de_clientes == 1:
+    nome = input('Por favor digite o seu nome:')
+    idade = int(input('Por favor, digite quantos anos tem:'))
+    tipos_de_quartos = int(input('''Por favor, digite o ID de qual quarto que voce deseja
+    0-Simple
+    1-Duplo
+    2-Luxuoso
+    R:'''))
+    quantidade_de_dias = int(input('Por favor, digite quantos dias ficará hospedado:'))
+    quartos_escolhidos.append(quartos[tipos_de_quartos])
+    valores.append(precos_do_hotel[tipos_de_quartos])
+    valor_total = valores[0] * quantidade_de_dias
+    print(f''' Senhor(a) {nome} aqui está o que você pediu
+    
+    Seu quato escolhido - {quartos_escolhidos}
+    O valor do quarto que escolheu - {valores}
+    O total que você irá pagar {valor_total}
+    
+     ''')
+
+elif quantidade_de_clientes == 2:
+    nome = input('Por favor digite o seu nome:')
+    idade = int(input('Por favor, digite quantos anos tem:'))
+    tipo_de_quarto = int(input('''Por favor, digite qual o ID quarto que voce deseja
+    0-Simple
+    1-Duplo
+    2-Luxuoso
+    R:'''))
+    quantidade_de_dias = int(input('Por favor, digite quantos dias ficará hospedado:'))
+    nome2 = input('Por favor digite o seu nome:')
+    idade2 = int(input('Por favor, digite quantos anos tem:'))
+    tipo_de_quarto2 = int(input('''Por favor, digite qual o ID do quarto que voce deseja
+    0-Simple
+    1-Duplo
+    2-Luxuoso
+    R:'''))
+    quantidade_de_dias2 = int(input('Por favor, digite quantos dias ficará hospedado:'))
+    quartos_escolhidos.append(quartos[tipo_de_quarto])
+    valores.append(precos_do_hotel[tipo_de_quarto])
+    valor_cliente1 = valores[0] * quantidade_de_dias
+    quartos_escolhidos.append(quartos[tipo_de_quarto2])
+    valores.append(precos_do_hotel[tipo_de_quarto2])
+    valor_cliente2 = valores[1] * quantidade_de_dias2
+    valor_total = valor_cliente1 + valor_cliente2
+    print(f'''Senhores clientes {nome} {nome2} Seus pedidos foram
+    Nome - {nome}
+    Seu quarto - {quartos_escolhidos[0]}
+    O valor do seu quarto - {valores[0]}
+    O seu valor individual - {valor_cliente1}
+    *****************************************
+    Nome - {nome2}
+    Seu quarto {quartos_escolhidos[1]}
+    O valor do seu quarto - {valores[1]}
+    O seu valor individual - {valor_cliente2}
+    *****************************************
+    Valor total de todos os clientes {valor_total}
+    
+     ''')
+
+elif quantidade_de_clientes == 3:
+    nome = input('Por favor digite o seu nome:')
+    idade = int(input('Por favor, digite quantos anos tem:'))
+    tipo_de_quarto = int(input('''Por favor, digite qual o ID quarto que voce deseja
+    0-Simple
+    1-Duplo
+    2-Luxuoso
+    R:'''))
+    quantidade_de_dias = int(input('Por favor, digite quantos dias ficará hospedado:'))
+    nome2 = input('Por favor digite o seu nome:')
+    idade2 = int(input('Por favor, digite quantos anos tem:'))
+    tipo_de_quarto2 = int(input('''Por favor, digite qual o ID do quarto que voce deseja
+    0-Simple
+    1-Duplo
+    2-Luxuoso
+    R:'''))
+    quantidade_de_dias2 = int(input('Por favor, digite quantos dias ficará hospedado:'))
+    nome3 = input('Por favor digite o seu nome:')
+    idade3 = int(input('Por favor, digite quantos anos tem:'))
+    tipo_de_quarto3 = int(input('''Por favor, digite qual o ID do quarto que voce deseja
+    0-Simple
+    1-Duplo
+    2-Luxuoso
+    R:'''))
+    quantidade_de_dias3 = int(input('Por favor, digite quantos dias ficará hospedado:'))
+    quartos_escolhidos.append(quartos[tipo_de_quarto])
+    valores.append(precos_do_hotel[tipo_de_quarto])
+    valor_cliente1 = valores[0] * quantidade_de_dias
+    quartos_escolhidos.append(quartos[tipo_de_quarto2])
+    valores.append(precos_do_hotel[tipo_de_quarto2])
+    valor_cliente2 = valores[1] * quantidade_de_dias2
+    quartos_escolhidos.append(quartos[tipo_de_quarto3])
+    valores.append(precos_do_hotel[tipo_de_quarto3])
+    valor_cliente3 = valores[2] * quantidade_de_dias3
+    valor_total = valor_cliente1 + valor_cliente2 + valor_cliente3
+    print(f'''Senhores clientes {nome} {nome2} Seus pedidos foram
+    Nome - {nome}
+    Seu quarto - {quartos_escolhidos[0]}
+    O valor do seu quarto - {valores[0]}
+    O seu valor individual - {valor_cliente1}
+    *****************************************
+    Nome - {nome2}
+    Seu quarto {quartos_escolhidos[1]}
+    O valor do seu quarto - {valores[1]}
+    O seu valor individual - {valor_cliente2}
+    *****************************************
+    Nome - {nome3}
+    Seu quarto {quartos_escolhidos[2]}
+    O valor do seu quarto - {valores[2]}
+    O seu valor individual - {valor_cliente3}
+    *****************************************
+    Valor total de todos os clientes {valor_total}
+    
+     ''')        
+else:
+    print('O número de hospedes para ser cadastrado é de no máximo 3, tente novamente')
