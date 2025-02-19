@@ -1,0 +1,28 @@
+# Nessa atividade a gente utilizou o looping para que fosse facilitado as reservas
+
+print('Ola querido(a) cliente')
+quantidade_de_atendimentos = int(input('Digite quantas reservas terão:'))
+tipos_de_quartos = ['Simples','Duplo','Luxuoso']
+valores = [100,150,200]
+valor_escolhido = []
+quarto_escolhido = []
+for n in range(0,quantidade_de_atendimentos):
+    nome = input('Por favor, digite seu nome:')
+    idade = int(input('Por favor, digite sua idade:'))
+    quartos = int(input('''Digite aqui o ID do quarto desejado
+    0-Simples
+    1-Duplo
+    2-Luxuoso
+    R:'''))
+    quantidade_de_dias = int(input('Digite aqui o numero de dias que ficará hospedado:'))
+    valor_escolhido.append(valores[quartos])
+    quarto_escolhido.append(tipos_de_quartos[quartos])
+    valor_do_pagamento = valor_escolhido[n] * quantidade_de_dias
+    print(f'''Senhor(a) {nome} Aqui esta o que você escolheu
+    
+    Quarto - {quarto_escolhido[n]}
+    Valor do quarto - {valor_escolhido[n]}
+    Numero de dias - {quantidade_de_dias}
+    Valor total - {valor_do_pagamento}
+    
+    ''')
