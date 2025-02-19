@@ -1,0 +1,94 @@
+# Nessa aula nós aprendemos sobre as funções, sobre como elas funcionam 
+# e como cria-las nós mesmos
+
+# 1  CRIE UMA FUNÇÃO PARA COMPARAR 2 NÚMEROS (par ou impar). UTILIZE VARIÁVEIS LOCAIS.
+
+def comparar():
+    while True:
+        print('Ola, seja bem vindo(a) usuario')
+        numero1 = float(input('Digite aqui o numero que você deseja comparar:'))
+        numero2 = float(input('Digite aqui o numero que você deseja comparar:'))
+        if numero1 > numero2:
+            print('O primeiro número digitado é maior')
+        elif numero2 > numero1:
+            print('O segundo número digitado é maior')
+        else:
+            print('Os números tem o mesmo valor')
+
+comparar()
+
+# 2 CRIE UMA FUNÇÃO PARA MULTIPLICAR 3 NUMEROS.
+
+def mult3():
+    while True:
+        print('Ola usuario, seja bem vindo(a)')
+        N1 = int(input('Digite aqui o número que você deseja multiplicar:'))
+        N2 = int(input('Digite aqui o número que você deseja multiplicar:'))
+        N3 = int(input('Digite aqui o número que você deseja multiplicar:'))
+        resultado = N1 * N2 * N3
+        print('E o resultado é', resultado)
+
+mult3()
+
+# 3 CRIE UMA FUNÇÃO PARA DESCOBRIR O VALOR ELEVADO DE UM NÚMERO.
+
+def potencia_ao_quadrado():
+    while True:
+        print('Ola usuario, seja bem vindo(a)')
+        N1 = int(input('Digite aqui o número que você deseja descobrir o seu quadrado:'))
+        resultado = N1 ** 2
+        print('E o resultado é',resultado)
+        
+
+potencia_ao_quadrado()
+
+# 4 CRIE UMA FUNÇÃO PARA MOSTRAR UMA MENSAGEM PERSONALIZADA NA TELA, SE O USUÁRIO DIGITAR, 18 ANOS
+
+def pers_18anos():
+    idade = int(input('Quantos anos você tem ?:'))
+    if idade == 18:
+        print('Parabêns, eramos você que estavamos procurando')
+    else:
+        print('Infelizmente você não foi escolhido')
+
+pers_18anos()
+
+# 5 DESENVOLVA UMA FUNÇÃO PARA DESCOBRIR A IDADE DE UMA PESSOA.
+
+def descobrir_idade():
+    ano = int(input('Em que ano você nasceu?\nR:'))
+    idade = 2025 - ano
+    print('Você tem aproximadamente',idade,'anos')
+
+descobrir_idade()
+
+# 6 DESENVOLVA UM AFUNÇÃO PARA VER SE O BRASIL GANHOU A COPA DE 1999
+
+def descobrir():
+    pergunta = input('Você quer descobrir se o brasil ganhou a copa do mundo em 1999? \nR:')
+    if pergunta == 'Sim' or pergunta == 'sim' or pergunta == 's' or pergunta == 'S':
+        print('Não, o brasil Perdeu a copa em 1998')
+    else:
+        print ('Ok')
+descobrir()
+
+# 7 DESENVOLVA UM SISTEMA DE RESTAURANTE, ONDE O CLIENTE TEM OPÇÃO DE ESCOLHER ENTRE SALADA, MACARRONADA, SANDUICHE, SORVETE.  
+
+ def Cardapio():
+    cardapio = ['Salada','Macarronada','Sanduiche','Sorvete']
+    print('Ola cliente, esse é o nosso cardapio de hoje')
+    print('''
+0-Salada
+1-Macarronada
+2-Sanduiche
+3-Sorvete
+
+''')
+    Id = int(input('Qual item do menu você escolhe atravez do ID dele ? \nR:'))
+    if Id <= 3:
+        escolha = cardapio[Id]
+        print('Ok cliente, o(a)',escolha,'chegara em breve em sua mesa')
+    else:
+       print('Esse Id não esta no cardápio, leia atentamente')
+
+Cardapio()
