@@ -65,11 +65,13 @@ descobrir_idade()
 # 6 DESENVOLVA UM AFUNÇÃO PARA VER SE O BRASIL GANHOU A COPA DE 1999
 
 def descobrir():
-    pergunta = input('Você quer descobrir se o brasil ganhou a copa do mundo em 1999? \nR:')
-    if pergunta == 'Sim' or pergunta == 'sim' or pergunta == 's' or pergunta == 'S':
-        print('Não, o brasil Perdeu a copa em 1998')
+    anos_ganhados = [1958, 1962, 1970, 1994, 2002]
+    pergunta = int(input('Qual ano você quer saber se o brasil ganhou a copa? \nR:'))
+    if pergunta in anos_ganhados:
+        print('Sim, esse ano o Brasil ganhou a copa')
     else:
-        print ('Ok')
+        print('Não, esse ano o Brasil não ganhou a copa')
+
 descobrir()
 
 # 7 DESENVOLVA UM SISTEMA DE RESTAURANTE, ONDE O CLIENTE TEM OPÇÃO DE ESCOLHER ENTRE SALADA, MACARRONADA, SANDUICHE, SORVETE.  
